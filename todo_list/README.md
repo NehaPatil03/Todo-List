@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# Todo List React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple Todo List application built with React. It allows users to add, edit, complete, and delete tasks with an easy-to-use interface.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Add new tasks
+- Edit existing tasks
+- Mark tasks as completed
+- Delete tasks
+- Toggle editing mode for tasks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm installed on your machine
+- Basic knowledge of React
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/NehaPatil03/Todo-List.git
+cd Todo-List
+Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy
+Edit
+npm install
+Start the development server:
 
-### `npm run eject`
+bash
+Copy
+Edit
+npm start
+Open your browser and go to http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Project Structure
+src/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+TodoWrapper.js — Main component managing state and rendering todos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Todo.js — Component displaying individual todo items
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+TodoForm.js — Form component to add new todos
 
-## Learn More
+EditTodoForm.js — Form component to edit existing todos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+index.js — Entry point of the React app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Usage
+Enter a task in the input field and click "Add" to add a new todo.
 
-### Code Splitting
+Click the checkbox to mark a todo as completed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Click the "Edit" button to modify a todo; after editing, save the changes.
 
-### Analyzing the Bundle Size
+Click the "Delete" button to remove a todo from the list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Testing Guide
+Since this is a simple React app without automated tests, follow these manual testing steps to ensure everything works correctly:
 
-### Making a Progressive Web App
+Add Todo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Type a task in the input field.
 
-### Advanced Configuration
+Click "Add".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Verify the new task appears in the list.
 
-### Deployment
+Complete Todo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Click the checkbox next to a task.
 
-### `npm run build` fails to minify
+Verify the task text style changes to indicate completion.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Edit Todo
+
+Click the "Edit" button on a task.
+
+Modify the task text in the input field.
+
+Click "Save" or confirm editing.
+
+Verify the task updates in the list.
+
+Delete Todo
+
+Click the "Delete" button next to a task.
+
+Verify the task is removed from the list.
+
+UI and Responsiveness
+
+Check the UI on different screen sizes to ensure usability.
+
+Ensure no errors appear in the browser console during operations.
+
+Troubleshooting
+If you see a blank screen or errors, check the browser console for messages.
+
+Make sure all components (Todo, TodoForm, EditTodoForm) are correctly imported and exported.
+
+Ensure React and dependencies are installed properly with npm install.
+
+Git Commands for Push
+bash
+Copy
+Edit
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+Replace main with your branch name if different.
