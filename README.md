@@ -27,4 +27,9 @@ A simple Todo List application built with React. It allows users to add, edit, c
 
 ```bash
 git clone https://github.com/NehaPatil03/Todo-List.git
+
 cd Todo-List
+
+npm install
+
+npm start
